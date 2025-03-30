@@ -1,0 +1,50 @@
+        commit eddd190df6ec2e325fa36cd7b57020940116dd4f (HEAD -> master, origin/master)
+        Merge: 9bf230b 9f34459
+        Author: lockeystorm <159271972+lockeystorm@users.noreply.github.com>
+        Date:   Sun Mar 30 18:05:08 2025 +0300
+        
+            Merge pull request #1 from lockeystorm/patch1
+            
+            pull request patch1 with 2 commits to master
+        
+        commit 9f344595daee66eeb5721867e21d79cf3e08bca8 (origin/patch1, patch1)
+        Author: lockeystorm <wallie4@ya.ru>
+        Date:   Sat Mar 29 00:18:43 2025 +0300
+        
+            added comments to hello_world.cpp
+        
+        commit 77dc79360a7aef7c6bfcb4783e59d20d0fb66376
+        Author: lockeystorm <wallie4@ya.ru>
+        Date:   Fri Mar 28 23:43:32 2025 +0300
+        
+            removed 'using namespace std'
+        
+        commit 9bf230b7f8c10ecc70323e9563192286448df229
+        Author: lockeystorm <wallie4@ya.ru>
+        Date:   Fri Mar 28 23:03:43 2025 +0300
+        
+            changed hello_world.cpp to hello world from <username>
+        
+        commit f12035e0aadfe2e7211a5d603e7115d49b1347d5
+        Author: lockeystorm <159271972+lockeystorm@users.noreply.github.com>
+        Date:   Fri Mar 28 22:51:05 2025 +0300
+        
+            Update minor mistake in hello_world.cpp
+        
+        commit d6e3abccbbad01a988a4a98a795c7a904e753c20
+        Author: lockeystorm <wallie4@ya.ru>
+        Date:   Fri Mar 28 21:59:05 2025 +0300
+        
+            added hello_world.cpp bad codestyle
+        
+        commit 2f6e32cc35fd045cc8b0d7c3cd063741995ef707
+        Author: lockeystorm <wallie4@ya.ru>
+        Date:   Fri Mar 28 21:17:13 2025 +0300
+        
+            first commit
+        
+        commit 1f81043d57d94502b3a9602393301fa1ce496b01
+        Author: lockeystorm <159271972+lockeystorm@users.noreply.github.com>
+        Date:   Fri Mar 28 16:56:07 2025 +0300
+        
+            Initial commit
