@@ -2,9 +2,9 @@
 
 <details>
   <summary>Part I</summary>
-  
-  <p>
-  1. Создайте пустой репозиторий на сервисе github.com (или gitlab.com, или bitbucket.com).
+  <p><br>
+  &nbsp;&nbsp;&nbsp;1. Создайте пустой репозиторий на сервисе github.com (или gitlab.com, или bitbucket.com).
+    
   2. Выполните инструкцию по созданию первого коммита на странице репозитория, созданного на предыдущем шаге.
   ```
   $ git init
@@ -17,6 +17,7 @@
   
   3. Создайте файл `hello_world.cpp` в локальной копии репозитория (который должен был появиться на шаге 2). Реализуйте программу Hello world на языке C++ используя плохой стиль кода. Например, после заголовочных файлов вставьте строку `using namespace std;`.
   ```
+  $ touch hello_world.cpp
   $ cat > hello_world.cpp <<EOF
   > #include <iostream>
   > 
@@ -89,12 +90,14 @@
 
 <details>
   <summary>Part II</summary>
-  <p>
-  1. В локальной копии репозитория создайте локальную ветку `patch1`.
-  ```
-  $ git checkout -b patch1
-  Switched to a new branch 'patch1'
-  ```
+  <p><br>
+    &nbsp;&nbsp;&nbsp;1. В локальной копии репозитория создайте локальную ветку `patch1`.
+    
+    
+    ```
+    $ git checkout -b patch1
+    Switched to a new branch 'patch1'
+    ```
     
   2. Внесите изменения в ветке `patch1` по исправлению кода и избавления от `using namespace std;`.
   ```
@@ -133,8 +136,8 @@
   origin — имя удалённого репозитория
   Если ветки нет, вывод будет пустым.
   
-  5. Создайте pull-request `patch1 -> master`.
-  base: master <- compare:patch1  Able to merge. These branches can be automatically merged.
+  5. Создайте pull-request `patch1 -> master`.<br>
+  ```base: master <- compare:patch1  Able to merge. These branches can be automatically merged.```
   
   6. В локальной копии в ветке `patch1` добавьте в исходный код комментарии.
   ```
@@ -166,67 +169,8 @@
    hello_world.cpp | 12 +++++-------
    1 file changed, 5 insertions(+), 7 deletions(-)
   ```
-  11. С помощью команды git log просмотрите историю в локальной версии ветки master.
-  ```
-  $ git log
-  ```
-    <details>
-      <summary>Вывод истории коммитов:</summary>
-      <p>
-        ```
-        commit eddd190df6ec2e325fa36cd7b57020940116dd4f (HEAD -> master, origin/master)
-        Merge: 9bf230b 9f34459
-        Author: lockeystorm <159271972+lockeystorm@users.noreply.github.com>
-        Date:   Sun Mar 30 18:05:08 2025 +0300
-        
-            Merge pull request #1 from lockeystorm/patch1
-            
-            pull request patch1 with 2 commits to master
-        
-        commit 9f344595daee66eeb5721867e21d79cf3e08bca8 (origin/patch1, patch1)
-        Author: lockeystorm <wallie4@ya.ru>
-        Date:   Sat Mar 29 00:18:43 2025 +0300
-        
-            added comments to hello_world.cpp
-        
-        commit 77dc79360a7aef7c6bfcb4783e59d20d0fb66376
-        Author: lockeystorm <wallie4@ya.ru>
-        Date:   Fri Mar 28 23:43:32 2025 +0300
-        
-            removed 'using namespace std'
-        
-        commit 9bf230b7f8c10ecc70323e9563192286448df229
-        Author: lockeystorm <wallie4@ya.ru>
-        Date:   Fri Mar 28 23:03:43 2025 +0300
-        
-            changed hello_world.cpp to hello world from <username>
-        
-        commit f12035e0aadfe2e7211a5d603e7115d49b1347d5
-        Author: lockeystorm <159271972+lockeystorm@users.noreply.github.com>
-        Date:   Fri Mar 28 22:51:05 2025 +0300
-        
-            Update minor mistake in hello_world.cpp
-        
-        commit d6e3abccbbad01a988a4a98a795c7a904e753c20
-        Author: lockeystorm <wallie4@ya.ru>
-        Date:   Fri Mar 28 21:59:05 2025 +0300
-        
-            added hello_world.cpp bad codestyle
-        
-        commit 2f6e32cc35fd045cc8b0d7c3cd063741995ef707
-        Author: lockeystorm <wallie4@ya.ru>
-        Date:   Fri Mar 28 21:17:13 2025 +0300
-        
-            first commit
-        
-        commit 1f81043d57d94502b3a9602393301fa1ce496b01
-        Author: lockeystorm <159271972+lockeystorm@users.noreply.github.com>
-        Date:   Fri Mar 28 16:56:07 2025 +0300
-        
-            Initial commit
-        ```
-      </p>
-    </details>
+  11. С помощью команды `git log` просмотрите историю в локальной версии ветки master.
+    Вывод истории коммитов
   12. Удалите локальную ветку `patch1`.
   ```
   $ git branch -d patch1
@@ -241,8 +185,9 @@
 
 <details>
   <summary>Part III</summary>
-  <p>
-  1. Создайте новую локальную ветку `patch2`.
+  <p><br>
+  &nbsp;&nbsp;&nbsp;1. Создайте новую локальную ветку `patch2`.<br>
+    
   ```
   $ git checkout -b patch2
   Switched to a new branch 'patch2'
@@ -275,7 +220,7 @@
   branch 'patch2' set up to track 'origin/patch2'.
   ```
   
-  4. В ветке `master` в удаленном репозитории измените комментарии, например, расставьте знаки препинания, переведите комментарии на другой язык.
+  4. В ветке `master` в удаленном репозитории измените комментарии, например, расставьте знаки препинания, переведите комментарии на другой язык.<br>
   делается через сайт
   
   5. Убедитесь, что в pull-request появились конфликты.
