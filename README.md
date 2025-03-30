@@ -1,11 +1,11 @@
 ## Homework for Lab02
-### Группа: Студент: 
+### Группа: ИУ8-21, Студент: Осипова О.
 
 <details>
   <summary>Part I</summary>
   <p>
   <br>&nbsp;&nbsp;&nbsp;1. Создайте пустой репозиторий на сервисе github.com (или gitlab.com, или bitbucket.com).<br>
-  Создаем пустой репозиторий *lab02_hw* через веб-интерфейс.
+  Создаем пустой репозиторий <i>lab02_hw</i> через веб-интерфейс.
     
   2. Выполните инструкцию по созданию первого коммита на странице репозитория, созданного на предыдущем шаге.
     
@@ -118,7 +118,7 @@
     Switched to a new branch 'patch1'
     ```
     
-    `git checkout -b patch1` - перемещаемся на ветку `patch1` (флаг -b показывает, что эту ветку надо создать) (вместо этого можно использовать две команды: `git branch patch1` и `git checkout patch1`).
+    git checkout -b patch1 - перемещаемся на ветку patch1 (флаг -b показывает, что эту ветку надо создать) (вместо этого можно использовать две команды: git branch patch1 и git checkout patch1).
     
   <br>2. Внесите изменения в ветке `patch1` по исправлению кода и избавления от `using namespace std;`.
   ```
@@ -147,7 +147,7 @@
    * [new branch]      patch1 -> patch1
   branch 'patch1' set up to track 'origin/patch1'.
   ```
-  `git push -u origin patch1` - отправляем изменения в удаленную ветку origin/patch1 и говорим ветке patch1 следить за веткой origin/patch1 удаленоого репозитория.
+  `git push -u origin patch1` - отправляем изменения в удаленную ветку origin/patch1 и говорим ветке patch1 следить за веткой origin/patch1 удаленного репозитория.
   
   <br>4. Проверьте, что ветка `patch1` доступна в удалённом репозитории.
   ```
@@ -221,7 +221,7 @@
   $ git checkout -b patch2
   Switched to a new branch 'patch2'
   ```
-  Используем ту де команду, что и при создании `patch1`.
+  Используем ту же команду, что и при создании `patch1`.
   
   <br>2. Измените *code style* с помощью утилиты *clang-format*. Например, используя опцию `-style=Mozilla`.
   ```
